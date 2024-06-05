@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Express App
+  body
+    header
+      h1 Welcome to Express App
+    nav
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/about") About
+    main
+      h2= pageTitle
+      p= pageContent
+      form(action="/submit", method="post")
+        input(type="text", name="data", placeholder="Enter your data")
+        button(type="submit") Submit
+    footer
+      p © 2024 Express App
+
+
+
+      <!-- index.pug -->
+img(src="/images/example.jpg", alt="Example Image")
+a(href="/download") Download Image
+
+
